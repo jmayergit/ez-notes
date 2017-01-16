@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>EZnotes</h1>
+    <%= link_to "New Note", new_note_path %>
+    <ul>
+      <% @notes.each do |note| %>
+        <li> <%= note.title %> </li>
+      <% end %>
+    </ul>
+  </body>
+
+  <!-- (<span title="Now You Don't" onMouseOver="this.style.opacity='0'" style="color:rgba(206, 204, 230, 0.59);text-shadow: 0px 0px 0.5px rgba(0, 0, 243, 0.65);">Now You See Me</span>)
+  (<span title="Hehe" onclick="this.innerText = 'Tehe'" style="color:rgba(206, 204, 230, 0.59);text-shadow: 0px 0px 0.5px rgba(0, 0, 243, 0.65);">Poke Me</span>)
+  (<span title="Hehe" onmouseover="this.style.cursor='url(https://overwatch-a.akamaihd.net/img/favicon-bb6200267bbdea6fdc9eb498a88722007dad6eb3b3c6437440025c66cb055fefdd1fbedf3886bd069fc3547c79fa8afee4795a278a644f6cfe10a7b1144f48bb.ico),auto'" onclick="window.alert('Put me on a pedestal and I\'ll only dissapoint you!\nTell me I\'m exceptional and I promise to exploit you!\nGive me all your money and I\'ll make some oragami honey!\nI think you\'re a joke but I don\'t find you very funny')" style="color:rgba(206, 204, 230, 0.59);text-shadow: 0px 0px 0.5px rgba(0, 0, 243, 0.65);">Poke Me</span>) -->
+</html>

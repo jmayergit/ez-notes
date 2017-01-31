@@ -2,11 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  background-color: rgba(115, 113, 113, 0.13);
+}
+
 .paper {
   background: url(http://www.timvandevall.com/wp-content/uploads/2013/05/Lined-Paper-Template-21.jpg);
   height: 803px;
   width: 620px;
   background-size: contain;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 form {

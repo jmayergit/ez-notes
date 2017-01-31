@@ -1,3 +1,36 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.paper {
+  background: url(http://www.timvandevall.com/wp-content/uploads/2013/05/Lined-Paper-Template-21.jpg);
+  height: 803px;
+  width: 620px;
+  background-size: contain;
+}
+
+form {
+  height: 100%;
+}
+
+input {
+  background: transparent;
+}
+
+input#note_name {
+  margin-left: 480px;
+  margin-top: 4px;
+  text-align: right;
+}
+
+input#note_title {
+  margin-left: 480px;
+  margin-top: 4px;
+  text-align: right;
+}
+
+input#note_misc {
+  margin-left: 480px;
+  margin-top: 4px;
+  text-align: right;
+}

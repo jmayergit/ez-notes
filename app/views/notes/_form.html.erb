@@ -1,7 +1,13 @@
-<%= form_for @note do |f| %>
-  <%= f.text_field  :name %>
+<div class="paper">
+  <%= form_for @note do |f| %>
+    <%= f.text_field  :name, placeholder: "Name" %> <br>
 
-  <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: "Title" %> <br>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.text_field :misc, placeholder: "Misc" %> <br>
+
+    <%= f.text_area :body %>
+
+    <%= f.submit %>
+  <% end %>
+</div>

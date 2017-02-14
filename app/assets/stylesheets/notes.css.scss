@@ -2,8 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-  background-color: rgba(115, 113, 113, 0.13);
+.huge.remove.icon {
+  color: #FEF2B6;
+}
+
+.huge.remove.icon:hover {
+  color: #EDEABC;
+}
+
+.huge.remove.icon:visited {
+  color: #DDDCC5;
 }
 
 .paper {
@@ -21,23 +29,42 @@ form {
 }
 
 input {
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  outline: none;
+}
+
+input[type=text] {
   background: transparent;
+  margin-left: 455px;
+  text-align: right;
+  height: 20px;
+  padding-right: 5px;
 }
 
 input#note_name {
-  margin-left: 480px;
-  margin-top: 4px;
-  text-align: right;
+  margin-top: 2px;
 }
 
 input#note_title {
-  margin-left: 480px;
   margin-top: 4px;
-  text-align: right;
 }
 
 input#note_misc {
-  margin-left: 480px;
   margin-top: 4px;
-  text-align: right;
+}
+
+textarea#note_body {
+  // line-height: 146%;
+  line-height: 0.5cm;
+  margin-left: 70px;
+  margin-top: 2px;
+  background: transparent;
+  width: 545px;
+  height: 700px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  outline: none;
 }

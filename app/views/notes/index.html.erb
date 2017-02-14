@@ -5,13 +5,27 @@
     <title></title>
   </head>
   <body>
-    <h1>EZnotes</h1>
-    <%= link_to "New Note", new_note_path %>
+    <h1 class="custom">EZnotes</h1>
+  <div class="ui segments" id="note_index">
+    <div class="ui segment">
+      <p><%= link_to "New Note", new_note_path %></p>
+    </div>
+    <div class="ui segments">
+      <% @notes.each do |note| %>
+        <div class="ui segment">
+          <p><%= link_to note.title, edit_note_path(note) %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+    <!-- <div class="links">
+      <%= link_to "New Note", new_note_path %>
+    </div>
     <ul>
       <% @notes.each do |note| %>
         <li> <%= note.title %> </li>
       <% end %>
-    </ul>
+    </ul> -->
   </body>
 
   <!-- (<span title="Now You Don't" onMouseOver="this.style.opacity='0'" style="color:rgba(206, 204, 230, 0.59);text-shadow: 0px 0px 0.5px rgba(0, 0, 243, 0.65);">Now You See Me</span>)

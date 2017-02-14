@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
+
 gem 'pg'
 
 gem 'semantic-ui-sass', git: 'https://github.com/doabit/semantic-ui-sass.git'
